@@ -1,0 +1,96 @@
+body{
+    background-image: url(../media/fundo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+
+.img{
+  height:159px;
+  width:227px;
+  margin-left: 35px;
+}
+
+.header {
+  display: flex; 
+  align-items: center;
+}
+
+.container {
+  background-color: rgba(240, 240, 240, 0);
+  border: 1px solid rgba(204, 204, 204, 0);
+  margin-left: 25%;
+  padding: 27px;
+  display: flex; 
+  align-items: center;
+}
+
+h1{
+  font-size: 44px;
+  color:#fff;
+}
+
+.container2{
+  width:100%;
+  height: 60%;
+  background-color: rgba(240, 240, 240, 0);
+  border: 1px solid rgba(204, 204, 204, 0);
+  margin-top: 55px;
+  gap: 5%;
+  display: flex;
+  margin-left: 6%;
+}
+
+.img2{
+  border-radius: 40px;
+  border: 7px solid;
+  border-color: black;
+  width:380px;
+  height: 380px;
+}
+
+@media screen and (max-width: 1020px) {
+
+  body{
+    background-image: url(../media/mobileFundo.png);
+  }
+
+  .container{
+    background-color: rgba(240, 240, 240, 0);
+    border: 1px solid rgba(204, 204, 204, 0);
+    margin-left: 9%;
+  }
+
+  h1{
+    font-size: 55px;
+  }
+
+  .img{
+    height:249px;
+    width:317px;
+    margin-left: 5px;
+  }
+
+  .header{
+    background-color: rgba(240, 240, 240, 0);
+    border: 1px solid rgba(204, 204, 204, 0);
+    margin-left: 5%;
+  }
+  .container2{
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(240, 240, 240, 0);
+    border: 1px solid rgba(204, 204, 204, 0);
+    width:85%;
+    height: 100%;
+    align-items: center;
+    margin-bottom: 190px;
+    gap: 3%;
+  }
+
+  .img2{
+    width: 530px; 
+    height: 530px;
+  }
+}

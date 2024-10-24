@@ -1,0 +1,83 @@
+body{
+  background-image: url(../media/fundo2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.header {
+  display: flex; 
+  align-items: center;
+}
+
+.container {
+  background-color: rgba(240, 240, 240, 0);
+  border: 1px solid rgba(204, 204, 204, 0);
+  display: flex;
+  margin-left: 15%;
+}
+
+.img1 {
+  height:159px;
+  width:227px;
+  margin-left: 35px;
+}
+
+.button {
+  border: none;
+  padding: 27px 66px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white; 
+  color: black; 
+  opacity: 0.7;
+  border-radius: 50px;
+  margin: 10px;
+  margin-top: 25px;
+}
+
+.button1:hover {
+  background-color: #4E73BE;
+  color: white;
+}
+
+.button2:hover {
+  background-color: #F2AA6B;
+  color: white;
+}
+
+.button3:hover {
+  background-color: #151F59;
+  color: white;
+}
+
+.button4{
+  background-color: #19A48B;
+  color: white;
+  opacity: 1;
+}
+
+.img2{
+  margin-top: 30px;
+  margin-left: 24%;
+  height: 485px;
+  width: 825px;
+  border: 8px solid #D83682;
+}
+
+.texto{
+  display: none;
+  position: absolute;
+  height: 185px;
+  width: 400px;
+  background-color: #19A48B;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}

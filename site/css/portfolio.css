@@ -1,0 +1,362 @@
+/*Fundo da página*/
+body{
+    background-image: url(../media/fundo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  
+  /*Aqui começa o cabeçalho pra quando for a versão de pc msm*/
+  .header {
+    display: flex; 
+    align-items: center;
+    background-color: rgba(240, 240, 240, 0);
+    border: 1px solid rgba(204, 204, 204, 0);
+  }
+  
+  .container {
+    background-color: rgba(240, 240, 240, 0);
+    border: 1px solid rgba(204, 204, 204, 0);
+    display: flex;
+    margin-left: 15%;
+  }
+  
+  .img1 {
+    height:159px;
+    width:227px;
+    margin-left: 35px;
+  }
+  
+  .button {
+    border: none;
+    padding: 27px 66px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    opacity: 0.7;
+    border-radius: 50px;
+    margin: 10px;
+    margin-top: 25px;
+  }
+  
+  .button1 {
+    background-color: #4E73BE;
+    color: white;
+    opacity: 1;
+  }
+  
+  .button2:hover {
+    background-color: #F2AA6B;
+    color: white;
+  }
+  
+  .button3:hover {
+    background-color: #151F59;
+    color: white;
+  }
+  
+  .button4:hover {
+    background-color: #19A48B;
+    color: white;
+  }
+  /*Fim da parte dos botoes para pc*/
+  
+  /*Começa a parte do menu para Mobile*/
+  .btn-abrir-menu .img4{
+    width: 60px; 
+    height: 60px; 
+  }
+  
+  .overlay-menu{
+  background-color: rgba(0, 0, 0, 0.598);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 88888;
+  display: none;
+  }
+  
+  .menu-mobile {
+  background-color: purple;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+  width: 0%;
+  transition: transform 1.5s ease; 
+  transform: translateX(0);
+  display: flex; 
+  flex-direction: column; 
+  padding-top: 60px; 
+  overflow: hidden;
+  
+  }
+  
+  .menu-mobile.abrir-menu{
+  width: 70%;
+  }
+  
+  .menu-mobile.abrir-menu ~ .overlay-menu{
+  display:block;
+  }
+  .menu-mobile nav {
+  width: 100%; 
+  }
+  
+  .menu-mobile nav ul {
+  text-align: right;
+  list-style-type: none;
+  padding: 0; 
+  margin: 0;
+  }
+  
+  .menu-mobile nav ul li {
+  margin-bottom: 15px; 
+  }
+  
+  .menu-mobile nav ul li a {
+  color: white;
+  font-size: 70px;
+  font-weight: 300;
+  padding: 20px 5%;
+  display: block;
+  text-decoration: none;
+  }
+  
+  .menu-mobile nav ul li a:hover {
+  background-color: rgb(223, 159, 243);
+  color: black;
+  }
+  
+  .menu-mobile .btn-fechar {
+  padding: 10px 4%;
+  cursor: pointer;
+  }
+  
+  .menu-mobile .btn-fechar .img3 {
+  width: 40px; 
+  height: 40px; 
+  margin-bottom: 34px; 
+  cursor: pointer; 
+  }
+  
+  .btn-abrir-menu{
+  display: none;
+  position: absolute; 
+  top: 5%; 
+  right: 10%; 
+  z-index: 999; 
+  }
+  /*Termina a parte do menu para mobile*/
+
+.imgReJ, .imgTccv, .imgTpp, .imgAmm{
+    height: 250px;
+    width: 470px;
+    border-bottom-width:18px;
+    border-bottom-style: solid;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.imgReJ{
+    border-right: 18px solid #4E73BE;
+    border-bottom-color: #4E73BE;
+}
+
+.imgTccv{
+    border-right: 18px solid #F2AA6B;
+    border-bottom-color: #F2AA6B;
+}
+
+.imgTpp{
+    border-right: 18px solid #19A48B;
+    border-bottom-color: #19A48B; 
+}
+
+.imgAmm{
+    border-right: 18px solid #151F59;
+    border-bottom-color: #151F59;
+}
+
+.imgReJ:hover, .imgTccv:hover, .imgTpp:hover, .imgAmm:hover{
+    opacity: 0.3;
+}
+
+.containerpai{
+    width: 100%;
+    height: 107%;
+    margin-top: 3%;
+    background-color: rgba(240, 240, 240, 0);
+    border: 1px solid rgba(204, 204, 204, 0);
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+}
+
+.container2, .container3{
+    width: 31%;
+    height: 100%;
+    margin-bottom: 0%;
+    background-color: rgba(240, 240, 240, 0);
+    border: 1px solid rgba(204, 204, 204, 0);
+}
+
+.saibaBotao{
+    position: relative;
+}
+
+.saibamais{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #D269E6;
+    color: #fff;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    font-size: 16px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.saibaBotao:hover .imgReJ, .saibaBotao:hover .saibamais {
+    opacity: 0.3;
+}
+
+.saibaBotao:hover .imgTccv, .saibaBotao:hover .saibamais {
+    opacity: 0.3;
+}
+
+.saibaBotao:hover .imgAmm, .saibaBotao:hover .saibamais {
+    opacity: 0.3;
+}
+
+.saibaBotao:hover .imgTpp, .saibaBotao:hover .saibamais {
+    opacity: 0.3;
+}
+
+.saibaBotao:hover .saibamais {
+    opacity: 1; 
+}
+
+.tpp, .ReJ, .tccv, .amm{
+    font-size: 30px;
+    color:#ffffff
+}
+
+.tpp, .amm{
+    margin-top: 10%;
+}
+@media screen and (max-width: 1020px) {
+
+    .img1{
+        margin-bottom: 5%;
+    }
+    body {
+        background-image: url(../media/mobileFundo.png);
+    }
+
+    .btn-abrir-menu {
+        display: block;
+    }
+   
+    .containerpai {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 85%;
+        gap: 1%;
+        margin-top: 49%;
+        width: auto;
+    }
+    
+    .container {
+        display: none;
+    }
+
+    .container2 {
+        width: auto;
+        margin-bottom: 0;
+        margin-top: 75px;
+        margin-left: 10%;
+    }
+
+    .container3 {
+        width: auto;
+        margin-left: 10%;
+        margin-top: 8%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img1 {
+        width: 40%; 
+        height: auto;
+    }
+
+    .imgReJ, .imgTccv, .imgTpp, .imgAmm {
+        height: 450px;
+        width: 770px;
+        margin-top: 15px;
+    }
+
+    .tpp, .ReJ, .tccv, .amm {
+        font-size: 40px;
+        color: #ffffff;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .tpp, .amm {
+        margin-top: 10%;
+    }
+
+    .imgAmm{
+        margin-bottom: 5%;
+    }
+
+    .saibaBotao .saibamais {
+        display: none;
+    }
+
+    .saibaBotao img {
+        display: block; 
+    }
+
+    .saibaBotao:hover .imgReJ, .saibaBotao:hover .saibamais {
+        opacity: 1;
+    }
+    
+    .saibaBotao:hover .imgTccv, .saibaBotao:hover .saibamais {
+        opacity: 1;
+    }
+    
+    .saibaBotao:hover .imgAmm, .saibaBotao:hover .saibamais {
+        opacity: 1;
+    }
+    
+    .saibaBotao:hover .imgTpp, .saibaBotao:hover .saibamais {
+        opacity: 1;
+    }
+    
+    .saibaBotao:hover .saibamais {
+        opacity: 1; 
+    }
+}

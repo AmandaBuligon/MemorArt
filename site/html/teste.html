@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Teste</title>
+    <style>
+        .curitiba {
+            display: none;
+            position: absolute;
+            height: 185px;
+            width: 400px;
+            background-color: #19A48B;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="curitiba" id="lista">
+        <h3>Campus Curitiba</h3>
+        <p>LALALA</p>
+    </div>
+
+    <img src="../media/ifprmapa.png" usemap="#image-map">
+    <map name="image-map">
+        <area target="_self" alt="curitiba" title="curitiba" href="#" 
+              coords="832,443,838,473,848,442,842,439,838,446,825,451,824,458,825,463,826,468,831,468,830,475,828,485,836,482,842,481,846,475,850,468,854,462,853,454,853,447" 
+              shape="poly" onmouseover="showInfo(event)" onmouseout="hideInfo()">
+    </map>
+
+    <script>
+        function showInfo(event) {
+            let lista = document.getElementById('lista');
+            if (lista) {
+                lista.style.display = 'block';
+                lista.style.top = (event.pageY + 10) + 'px';
+                lista.style.left = (event.pageX + 10) + 'px';
+            }
+        }
+
+        function hideInfo() {
+            let lista = document.getElementById('lista');
+            if (lista) {
+                lista.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
